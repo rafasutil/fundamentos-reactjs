@@ -1,17 +1,21 @@
-import { Header } from './components/Header'
-import { Post } from './Post'
+import { Header } from './components/Header';
+import { Sidebar } from './components/Sidebar';
+import { Post } from './components/Post';
+
 import './global.css'
 import styles from './App.module.css'
-import { Sidebar } from './components/Sidebar'
 
 export function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <div className={styles.wrapper}>
-        <Sidebar/>
+        <Sidebar />
         <main>
-          <h2>MAIN</h2>
+          <Post />
+          <Post />
+          <Post />
+          <Post />
         </main>
       </div>
     </div>
